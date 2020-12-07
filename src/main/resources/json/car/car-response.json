@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "No": {
+      "type": "integer"
+    },
+    "make": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "course": {
+      "type": "integer"
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "$ref": "./route-response.json"
+      }
+    },
+    "carStatus": {
+      "type": "string"
+    }
+  }
+}

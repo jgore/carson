@@ -1,0 +1,26 @@
+mongodb:
+  max:
+    pool:
+      size: 300
+
+spring:
+  data:
+    mongodb:
+      database:  goreit
+      authentication-database: admin
+      host: mongo
+      port: 27017
+      password: root
+      username: root
+    solr:
+      host: http://127.0.0.1:8983/solr
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+    application:
+      name: Carson
+
+server:
+  port: 8082
